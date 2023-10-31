@@ -7,6 +7,11 @@ public class App {
   
 
   public static String triangulo(int a, int b, int c) {
+    
+    if (a * a + b * b == c * c || b * b + c * c == a * a || c * c + a * a == b * b) {
+      return "es un triangulo pitagorico";
+  }
+  
     if(a != b && b != c && c != a){
       
       return "es un triangulo escaleno";
